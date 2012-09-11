@@ -7,7 +7,9 @@
 <body>
 	<element name="accordion" extends="div">
 		<template>
-			<content></content>
+			<div class="accordion-wrapper">
+				<content></content>
+			</div>
 		</template>
 		<script>
 			if (this !== window) {
@@ -53,13 +55,13 @@
 	<element name="accordion-section" extends="section">
 		<template>
 			<style>
-				header {
+				.accordion-wrapper header {
 					cursor: pointer;
 				}
-				div {
+				.accordion-wrapper div {
 					display: none;
 				}
-				div.selected {
+				.accordion-wrapper div.selected {
 					display: block;
 				}
 			</style>

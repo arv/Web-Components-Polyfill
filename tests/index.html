@@ -7,6 +7,18 @@
     <script>
         window.__exported_components_polyfill_scope__ = window.polyfill = { runManually: true };
     </script>
+
+<script src="../../toolkitchen/polyfills/ShadowDOM/map.js"></script>
+<script src="../../toolkitchen/polyfills/ShadowDOM/sidetable.js"></script>
+<script src="../../toolkitchen/polyfills/ShadowDOM/domreflectionutils.js"></script>
+<script src="../../toolkitchen/polyfills/ShadowDOM/domoverrides.js"></script>
+<script src="../../toolkitchen/polyfills/ShadowDOM/paralleltrees.js"></script>
+<script src="../../toolkitchen/polyfills/ShadowDOM/ShadowRoot.js"></script>
+<script>
+if (!window.WebKitShadowRoot)
+    window.WebKitShadowRoot = window.JsShadowRoot;
+</script>
+
     <script src="../src/components-polyfill.js"></script>
     <script src="requirements.js"></script>
     <script src="loader.js"></script>
